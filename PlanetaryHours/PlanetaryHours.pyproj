@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>125e04ab-2bed-4ee5-83e2-8b2f43c1df48</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>astral.py</StartupFile>
+    <StartupFile>sun_moon_phases.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="astral.py" />
+    <Compile Include="sun_moon_phases.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
