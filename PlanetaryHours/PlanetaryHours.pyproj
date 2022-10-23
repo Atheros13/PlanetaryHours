@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>125e04ab-2bed-4ee5-83e2-8b2f43c1df48</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>sun_moon_phases.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,12 +22,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="sun_moon_phases.py" />
+    <Compile Include="main.py" />
+    <Compile Include="classes\planetary_hours.py" />
+    <Compile Include="classes\sun_moon_phases.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
       <Id>env</Id>
-      <Version>0.0</Version>
+      <Version>3.9</Version>
       <Description>env (Python 3.9 (64-bit))</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
@@ -36,7 +41,7 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="requirements.txt" />
+    <Folder Include="classes\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
